@@ -9,7 +9,7 @@ export default function NotFound() {
         alt="404 Not Found"
         fill
         style={{ objectFit: "cover", objectPosition: "center" }}
-        className="opacity-80"
+        className="opacity-100"
       />
       <div className="absolute top-22/29 left-25/47 transform -translate-x-20/64 -translate-y-1/2 text-center z-10">
         <Link
