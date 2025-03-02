@@ -1,7 +1,5 @@
 # SpendShield
 
-![SpendShield Logo](public/logo.png)
-
 SpendShield is a gamified social media finance app designed to make saving money fun, competitive, and engaging! By combining peer support, friendly competition, and smart financial insights, SpendShield helps users develop healthy spending habits along with their friends.
 
 ## ✨ Features
@@ -33,12 +31,14 @@ SpendShield is a gamified social media finance app designed to make saving money
 ### Installation
 
 1. Clone the repository
+
    ```bash
-   git clone https://github.com/yourusername/spendshield.git
-   cd spendshield
+   git clone https://github.com/bruvato/spend-shield.git
+   cd hack-illinois
    ```
 
 2. Install dependencies
+
    ```bash
    npm install
    # or
@@ -46,6 +46,7 @@ SpendShield is a gamified social media finance app designed to make saving money
    ```
 
 3. Start the development server
+
    ```bash
    npm run dev
    # or
@@ -59,6 +60,7 @@ SpendShield is a gamified social media finance app designed to make saving money
 ### Dashboard
 
 The main dashboard provides an overview of your financial health, including:
+
 - Recent transactions
 - Spending by category
 - Spending over time
@@ -67,6 +69,7 @@ The main dashboard provides an overview of your financial health, including:
 ### Social Feed
 
 Connect with friends to:
+
 - Share financial achievements
 - Like and comment on friends' transactions
 - Get inspired by others' financial journeys
@@ -74,6 +77,7 @@ Connect with friends to:
 ### Leaderboard
 
 Compare your saving progress with friends:
+
 - See who's saving the highest percentage of their income
 - Track your ranking over time
 - Celebrate improvements with trend indicators

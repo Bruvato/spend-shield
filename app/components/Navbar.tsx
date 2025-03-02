@@ -23,7 +23,7 @@ export default async function Navbar() {
                   href="#"
                   className="text-sm text-gray-300 hover:text-white"
                 >
-                  Pricing
+                  Priciooong
                 </Link>
                 <Link
                   href="#"
