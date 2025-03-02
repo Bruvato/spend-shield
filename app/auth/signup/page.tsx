@@ -39,7 +39,7 @@ export default function Page() {
         />
         <div className="pt-3">
           <Button type="submit" size="lg">
-            Log in
+            Sign up
           </Button>
         </div>
         <div className="pt-1 pb-3">
