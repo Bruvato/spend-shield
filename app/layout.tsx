@@ -4,6 +4,7 @@ import type React from "react";
 import type { Metadata } from "next";
 import MouseMoveEffect from "../components/mouse-move-effect";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +30,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <Suspense>{children}</Suspense>
         </ThemeProvider>
       </body>
     </html>
