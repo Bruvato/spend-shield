@@ -2,16 +2,20 @@
 
 import * as React from "react";
 import {
-  AudioWaveform,
-  BookOpen,
-  Bot,
-  Command,
-  Frame,
-  GalleryVerticalEnd,
-  Map,
-  PieChart,
+  BarChart3,
+  CreditCard,
+  DollarSign,
+  Home,
+  LineChart,
+  PiggyBank,
   Settings2,
-  SquareTerminal,
+  ShoppingBag,
+  Target,
+  Wallet,
+  Calendar,
+  Users,
+  Bell,
+  TrendingDown
 } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
@@ -29,129 +33,154 @@ import {
 // This is sample data.
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    name: "John Doe",
+    email: "john@example.com",
+    avatar: "/avatars/user.jpg",
   },
   teams: [
     {
-      name: "Acme Inc",
-      logo: GalleryVerticalEnd,
-      plan: "Enterprise",
+      name: "Personal",
+      logo: Wallet,
+      plan: "Premium",
     },
     {
-      name: "Acme Corp.",
-      logo: AudioWaveform,
-      plan: "Startup",
+      name: "Family",
+      logo: Users,
+      plan: "Shared",
     },
     {
-      name: "Evil Corp.",
-      logo: Command,
-      plan: "Free",
+      name: "Work",
+      logo: CreditCard,
+      plan: "Business",
     },
   ],
   navMain: [
     {
-      title: "Playground",
-      url: "#",
-      icon: SquareTerminal,
+      title: "Dashboard",
+      url: "/user/dashboard",
+      icon: Home,
       isActive: true,
       items: [
         {
-          title: "History",
-          url: "#",
+          title: "Overview",
+          url: "/user/dashboard",
         },
         {
-          title: "Starred",
-          url: "#",
+          title: "Analytics",
+          url: "/user/dashboard/analytics",
         },
         {
-          title: "Settings",
-          url: "#",
+          title: "Reports",
+          url: "/user/dashboard/reports",
         },
       ],
     },
     {
-      title: "Models",
-      url: "#",
-      icon: Bot,
+      title: "Spending",
+      url: "/user/spending",
+      icon: ShoppingBag,
       items: [
         {
-          title: "Genesis",
-          url: "#",
+          title: "Transactions",
+          url: "/user/spending/transactions",
         },
         {
-          title: "Explorer",
-          url: "#",
+          title: "Categories",
+          url: "/user/spending/categories",
         },
         {
-          title: "Quantum",
-          url: "#",
+          title: "Recurring",
+          url: "/user/spending/recurring",
         },
       ],
     },
     {
-      title: "Documentation",
-      url: "#",
-      icon: BookOpen,
+      title: "Impulse Control",
+      url: "/user/impulse",
+      icon: TrendingDown,
       items: [
         {
-          title: "Introduction",
-          url: "#",
+          title: "Savings Calculator",
+          url: "/user/impulse/calculator",
         },
         {
-          title: "Get Started",
-          url: "#",
+          title: "Waiting Lists",
+          url: "/user/impulse/waiting-lists",
         },
         {
-          title: "Tutorials",
-          url: "#",
+          title: "Decision Journal",
+          url: "/user/impulse/journal",
         },
         {
-          title: "Changelog",
-          url: "#",
+          title: "Cool-down Timer",
+          url: "/user/impulse/timer",
         },
       ],
+    },
+    {
+      title: "Goals",
+      url: "/user/goals",
+      icon: Target,
+      items: [
+        {
+          title: "Savings Goals",
+          url: "/user/goals/savings",
+        },
+        {
+          title: "Spending Limits",
+          url: "/user/goals/limits",
+        },
+        {
+          title: "Achievements",
+          url: "/user/goals/achievements",
+        },
+      ],
+    },
+    {
+      title: "Analytics",
+      url: "/user/analytics",
+      icon: BarChart3,
+      items: [],
     },
     {
       title: "Settings",
-      url: "#",
+      url: "/user/settings",
       icon: Settings2,
       items: [
         {
-          title: "General",
-          url: "#",
+          title: "Account",
+          url: "/user/settings/account",
         },
         {
-          title: "Team",
-          url: "#",
+          title: "Notifications",
+          url: "/user/settings/notifications",
         },
         {
-          title: "Billing",
-          url: "#",
+          title: "Preferences",
+          url: "/user/settings/preferences",
         },
         {
-          title: "Limits",
-          url: "#",
+          title: "Connected Accounts",
+          url: "/user/settings/connected",
         },
       ],
     },
   ],
   projects: [
     {
-      name: "Design Engineering",
-      url: "#",
-      icon: Frame,
+      name: "New Car Fund",
+      url: "/user/projects/car-fund",
+      icon: PiggyBank,
     },
     {
-      name: "Sales & Marketing",
-      url: "#",
-      icon: PieChart,
+      name: "Home Renovation",
+      url: "/user/projects/home-renovation",
+      icon: DollarSign,
     },
     {
-      name: "Travel",
-      url: "#",
-      icon: Map,
+      name: "Vacation 2025",
+      url: "/user/projects/vacation",
+      icon: Calendar,
     },
   ],
 };
