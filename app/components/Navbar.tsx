@@ -1,7 +1,14 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { supabaseClient } from "@/lib/supabase/client";
+import { supabaseServer } from "@/lib/supabase/server";
 
-export default function Navbar() {
+export default async function Navbar() {
+  const isSignedIn = (await (
+    await (await supabaseServer()).auth.getUser()
+  ).data)
+    ? 1
+    : 0;
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,11 +47,13 @@ export default function Navbar() {
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            <Link href="/">
-              <Button variant="ghost" className="text-sm cursor-pointer">
-                Sign In
-              </Button>
-            </Link>
+            {!isSignedIn && (
+              <Link href="/auth/login">
+                <Button variant="ghost" className="text-sm cursor-pointer">
+                  Sign In
+                </Button>
+              </Link>
+            )}
 
             <Link href="/">
               <Button className="text-sm hover:opacity-90 cursor-pointer">
