@@ -449,10 +449,7 @@ export function FriendsTransactions() {
             ...item,
             transaction: {
               ...item.transaction,
-              comments: [
-                ...(item.transaction.comments || []),
-                newComment,
-              ],
+              comments: [...(item.transaction.comments || []), newComment],
             },
           };
         }
@@ -588,7 +585,6 @@ export function FriendsTransactions() {
                         ? "default"
                         : "ghost"
                     }
-                    size="sm"
                     className="text-xs"
                     onClick={() => handleLike(transaction.id)}
                   >
@@ -605,7 +601,6 @@ export function FriendsTransactions() {
                           ? "default"
                           : "ghost"
                       }
-                      size="sm"
                       className="text-xs"
                       onClick={() => handleDislike(transaction.id)}
                     >
@@ -618,7 +613,6 @@ export function FriendsTransactions() {
                   )}
                   <Button
                     variant={showComments[transaction.id] ? "default" : "ghost"}
-                    size="sm"
                     className="text-xs"
                     onClick={() => toggleComments(transaction.id)}
                   >
@@ -631,37 +625,42 @@ export function FriendsTransactions() {
 
                 {showComments[transaction.id] && (
                   <div className="border-t pt-3">
-                    {transaction.comments && transaction.comments.length > 0 && (
-                      <div className="space-y-2 mb-3">
-                        {transaction.comments.map((comment) => (
-                          <div key={comment.id} className="flex space-x-2">
-                            <Avatar className="h-6 w-6">
-                              <AvatarFallback className="text-xs">
-                                {comment.user.name.substring(0, 2)}
-                              </AvatarFallback>
-                            </Avatar>
-                            <div className="bg-secondary p-2 rounded-md flex-1">
-                              <div className="flex justify-between">
-                                <span className="text-xs font-medium">
-                                  {comment.user.name}
-                                </span>
-                                <span className="text-xs text-muted-foreground">
-                                  {formatTimeAgo(comment.created_at)}
-                                </span>
+                    {transaction.comments &&
+                      transaction.comments.length > 0 && (
+                        <div className="space-y-2 mb-3">
+                          {transaction.comments.map((comment) => (
+                            <div key={comment.id} className="flex space-x-2">
+                              <Avatar className="h-6 w-6">
+                                <AvatarFallback className="text-xs">
+                                  {comment.user.name.substring(0, 2)}
+                                </AvatarFallback>
+                              </Avatar>
+                              <div className="bg-secondary p-2 rounded-md flex-1">
+                                <div className="flex justify-between">
+                                  <span className="text-xs font-medium">
+                                    {comment.user.name}
+                                  </span>
+                                  <span className="text-xs text-muted-foreground">
+                                    {formatTimeAgo(comment.created_at)}
+                                  </span>
+                                </div>
+                                <p className="text-sm mt-1">
+                                  {comment.content}
+                                </p>
                               </div>
-                              <p className="text-sm mt-1">{comment.content}</p>
                             </div>
-                          </div>
-                        ))}
-                      </div>
-                    )}
+                          ))}
+                        </div>
+                      )}
 
                     <div className="flex space-x-2">
                       <Input
                         placeholder="Add a comment..."
-                        size="sm"
+                        className="text-sm h-8"
                         value={commentText[transaction.id] || ""}
-                        onChange={(e) => handleCommentChange(transaction.id, e.target.value)}
+                        onChange={(e) =>
+                          handleCommentChange(transaction.id, e.target.value)
+                        }
                         onKeyDown={(e) => {
                           if (e.key === "Enter") {
                             addComment(transaction.id);
@@ -669,7 +668,7 @@ export function FriendsTransactions() {
                         }}
                       />
                       <Button
-                        size="sm"
+                        className="text-xs"
                         variant="outline"
                         onClick={() => addComment(transaction.id)}
                       >
