@@ -1,16 +1,13 @@
 import { supabaseServer } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(request: NextRequest) {
-    const client = await supabaseServer();
-    const { error } = await client.auth.signOut();
-    if (error) {
-        return {
-            status: 500,
-            body: error.message,
-        };
-    }
+  const client = await supabaseServer();
+  const { error } = await client.auth.signOut();
+  if (error) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
 
-    redirect("/");
+  return NextResponse.redirect(new URL("/", request.url));
 }
