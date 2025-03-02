@@ -11,21 +11,23 @@ export default function Hero() {
           Spend Smarter with
           <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-            SpendQuest
+            SpendShield
           </span>
         </h1>
         <p className="max-w-2xl mx-auto text-lg sm:text-xl text-gray-400 mb-10">
-          A gamified budgeting app where users turn their spending habits into
-          an RPG-style adventure
+          A social media finance app that gamifies saving and helps build better
+          spending habits.
         </p>
         <div className="flex justify-center gap-4">
           <Button variant="outline" size="lg">
             Try it for Free
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
-          <Button variant="outline" size="lg">
-            View Demo
-          </Button>
+          <Link href={"./user/dashboard"}>
+            <Button variant="outline" size="lg">
+              View Demo
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
