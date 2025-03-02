@@ -5,7 +5,7 @@ import { transactions } from "@/lib/data/mock-transactions";
 export async function GET(
   request: NextRequest,
   { params }: { params: { id: string } }
-) {
+): Promise<NextResponse> {
   const response = handleApiRequest(() => {
     const transaction = transactions.find((t) => t.id === params.id);
     if (!transaction) {
@@ -24,7 +24,7 @@ export async function GET(
 export async function PUT(
   request: NextRequest,
   { params }: { params: { id: string } }
-) {
+): Promise<NextResponse> {
   try {
     const body = await request.json();
     const transactionIndex = transactions.findIndex((t) => t.id === params.id);
