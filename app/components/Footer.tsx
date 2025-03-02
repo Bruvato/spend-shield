@@ -82,7 +82,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="container border-t py-6">
+      <div className="container border-t py-6 w-full max-w-screen">
         <p className="text-center text-sm text-muted-foreground">
           © {new Date().getFullYear()} RCM GAMES All rights reserved.
         </p>
