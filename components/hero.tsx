@@ -23,9 +23,11 @@ export default function Hero() {
             Try it for Free
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
-          <Button variant="outline" size="lg">
-            View Demo
-          </Button>
+          <Link href={"./user/dashboard"}>
+            <Button variant="outline" size="lg">
+              View Demo
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

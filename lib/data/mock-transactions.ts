@@ -1,0 +1,185 @@
+import { Transaction } from './models/types';
+
+// Mock transaction data
+export const transactions: Transaction[] = [
+  {
+    id: "t1",
+    amount: 1200,
+    description: "Monthly Rent",
+    category: "Housing",
+    date: "2025-03-01T08:00:00Z",
+    type: "expense",
+    status: "completed",
+    isImpulse: "no",
+    accountId: "acc1",
+    userId: "user1"
+  },
+  {
+    id: "t2",
+    amount: 85.75,
+    description: "Grocery Shopping",
+    category: "Groceries",
+    date: "2025-03-01T14:30:00Z",
+    type: "expense",
+    status: "completed",
+    isImpulse: "no",
+    accountId: "acc1",
+    userId: "user1"
+  },
+  {
+    id: "t3",
+    amount: 42.99,
+    description: "Dining Out - Pizza",
+    category: "Dining Out",
+    date: "2025-03-01T19:45:00Z",
+    type: "expense",
+    status: "completed",
+    isImpulse: "yes",
+    accountId: "acc1",
+    userId: "user1"
+  },
+  {
+    id: "t4",
+    amount: 3500,
+    description: "Monthly Salary",
+    category: "Income",
+    date: "2025-03-01T09:00:00Z",
+    type: "income",
+    status: "completed",
+    isImpulse: "no",
+    accountId: "acc1",
+    userId: "user1"
+  },
+  {
+    id: "t5",
+    amount: 150.25,
+    description: "New Headphones",
+    category: "Electronics",
+    date: "2025-02-28T16:20:00Z",
+    type: "expense",
+    status: "completed",
+    isImpulse: "yes",
+    accountId: "acc1",
+    userId: "user1"
+  },
+  {
+    id: "t6",
+    amount: 65.50,
+    description: "Gas Station",
+    category: "Transportation",
+    date: "2025-02-28T11:15:00Z",
+    type: "expense",
+    status: "completed",
+    isImpulse: "no",
+    accountId: "acc1",
+    userId: "user1"
+  },
+  {
+    id: "t7",
+    amount: 10.99,
+    description: "Netflix Subscription",
+    category: "Entertainment",
+    date: "2025-02-27T07:30:00Z",
+    type: "expense",
+    status: "completed",
+    isImpulse: "no",
+    accountId: "acc1",
+    userId: "user1"
+  },
+  {
+    id: "t8",
+    amount: 55.25,
+    description: "Clothing Purchase",
+    category: "Shopping",
+    date: "2025-02-26T15:10:00Z",
+    type: "expense",
+    status: "completed",
+    isImpulse: "yes",
+    accountId: "acc1",
+    userId: "user1"
+  },
+  {
+    id: "t9",
+    amount: 45.00,
+    description: "Gym Membership",
+    category: "Health & Fitness",
+    date: "2025-02-25T08:45:00Z",
+    type: "expense",
+    status: "completed",
+    isImpulse: "no",
+    accountId: "acc1",
+    userId: "user1"
+  },
+  {
+    id: "t10",
+    amount: 120.75,
+    description: "Utility Bill",
+    category: "Bills & Utilities",
+    date: "2025-02-24T10:30:00Z",
+    type: "expense",
+    status: "completed",
+    isImpulse: "no",
+    accountId: "acc1",
+    userId: "user1"
+  },
+  {
+    id: "t11",
+    amount: 35.99,
+    description: "Book Purchase",
+    category: "Entertainment",
+    date: "2025-02-23T14:20:00Z",
+    type: "expense",
+    status: "completed",
+    isImpulse: "no",
+    accountId: "acc1",
+    userId: "user1"
+  },
+  {
+    id: "t12",
+    amount: 78.50,
+    description: "Restaurant Dinner",
+    category: "Dining Out",
+    date: "2025-02-22T19:30:00Z",
+    type: "expense",
+    status: "completed",
+    isImpulse: "no",
+    accountId: "acc1",
+    userId: "user1"
+  },
+  {
+    id: "t13",
+    amount: 25.00,
+    description: "Mobile Phone App Purchase",
+    category: "Entertainment",
+    date: "2025-02-21T13:15:00Z",
+    type: "expense",
+    status: "completed",
+    isImpulse: "yes",
+    accountId: "acc1",
+    userId: "user1"
+  },
+  {
+    id: "t14",
+    amount: 115.30,
+    description: "Grocery Shopping",
+    category: "Groceries",
+    date: "2025-02-20T11:45:00Z",
+    type: "expense",
+    status: "completed",
+    isImpulse: "no",
+    accountId: "acc1",
+    userId: "user1"
+  },
+  {
+    id: "t15",
+    amount: 200.00,
+    description: "Transfer to Savings",
+    category: "Transfers",
+    date: "2025-02-15T09:00:00Z",
+    type: "transfer",
+    status: "completed",
+    isImpulse: "no",
+    accountId: "acc1",
+    userId: "user1"
+  }
+];
