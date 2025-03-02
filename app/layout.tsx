@@ -9,8 +9,9 @@ import { Suspense } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "app name",
-  description: "app description.",
+  title: "SpendShield",
+  description:
+    "SpendShield is a social media finance app that gamifies saving money into a fun, competitive, and engaging experience! By combining peer support, friendly competition, and smart financial insights, SpendShield helps users build better spending habits—together.",
 };
 
 export default function RootLayout({
