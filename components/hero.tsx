@@ -15,8 +15,8 @@ export default function Hero() {
           </span>
         </h1>
         <p className="max-w-2xl mx-auto text-lg sm:text-xl text-gray-400 mb-10">
-          A gamified budgeting app where users turn their spending habits into
-          an RPG-style adventure
+          A social media finance app that gamifies saving and helps build better
+          spending habits.
         </p>
         <div className="flex justify-center gap-4">
           <Button variant="outline" size="lg">

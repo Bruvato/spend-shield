@@ -29,7 +29,7 @@ export default function Page() {
             type="email"
             name="email"
             required
-            placeholder="raymond@northeast.com"
+            placeholder="Enter Email"
           />
           <div className="self-start ml-1 mt-2">
             <Label htmlFor="password">Password</Label>
@@ -39,7 +39,7 @@ export default function Page() {
             type="password"
             name="password"
             required
-            placeholder="Ha1Ha2Ha3Ha4"
+            placeholder="Enter Password"
           />
           <div className="pt-3">
             <Button type="submit" size="lg">
