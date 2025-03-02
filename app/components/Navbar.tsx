@@ -47,7 +47,13 @@ export default async function Navbar() {
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            {!isSignedIn && (
+            {isSignedIn ? (
+              <Link href="/auth/logout">
+                <Button variant="ghost" className="text-sm cursor-pointer">
+                  Sign out
+                </Button>
+              </Link>
+            ) : (
               <Link href="/auth/login">
                 <Button variant="ghost" className="text-sm cursor-pointer">
                   Sign In

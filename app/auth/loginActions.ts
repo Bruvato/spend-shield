@@ -32,6 +32,6 @@ export async function signup(formData: FormData) {
     };
 
     const error = await supabase.auth.signUp(data);
-    if (error) redirect(`/auth/signup?error=${error.error?.name}`);
+    if (error.error) redirect(`/auth/signup?error=${error.error?.name}`);
     redirect("/auth/signup/remindconfirm");
 }
