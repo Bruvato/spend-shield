@@ -11,7 +11,7 @@ export default function Hero() {
           Spend Smarter with
           <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-            SpendQuest
+            SpendShield
           </span>
         </h1>
         <p className="max-w-2xl mx-auto text-lg sm:text-xl text-gray-400 mb-10">
