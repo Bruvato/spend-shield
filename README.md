@@ -1,8 +1,14 @@
 # SpendShield
 
+![hero](https://github.com/user-attachments/assets/00fceb3c-748f-4e65-a791-af6ec1b85c29)
+![dashboard1](https://github.com/user-attachments/assets/feeb79cc-528d-4f60-9e1d-95eb3e2f6ad3)
+![dashboard2](https://github.com/user-attachments/assets/173c8f12-4471-4345-ae4c-54ec90a984b9)
+
 SpendShield is a gamified social media finance app designed to make saving money fun, competitive, and engaging! By combining peer support, friendly competition, and smart financial insights, SpendShield helps users develop healthy spending habits along with their friends.
 
-## ✨ Features
+[Devpost](https://devpost.com/software/spendshield) | [Video Demo](https://youtu.be/_oXCg3yg9Y0?si=91zvM0QtYjW5Eacf) | [Live Demo](https://spend-shield.vercel.app/)
+
+## Features
 
 - **Interactive Financial Dashboard**: Visualize spending patterns through intuitive charts and graphs
 - **Social Feed**: See friends' financial wins and offer support through likes and comments
@@ -12,7 +18,7 @@ SpendShield is a gamified social media finance app designed to make saving money
 - **Friendly Challenges**: Compete with friends on specific saving goals
 - **Trend Indicators**: Track improvement or decline in financial behaviors
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
@@ -21,7 +27,7 @@ SpendShield is a gamified social media finance app designed to make saving money
 - **Data Visualization**: [Recharts](https://recharts.org/)
 - **Icons**: [Lucide Icons](https://lucide.dev/)
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -55,7 +61,7 @@ SpendShield is a gamified social media finance app designed to make saving money
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application
 
-## 📱 Usage
+## Usage
 
 ### Dashboard
 
@@ -82,7 +88,7 @@ Compare your saving progress with friends:
 - Track your ranking over time
 - Celebrate improvements with trend indicators
 
-## 🧪 Project Structure
+## Project Structure
 
 ```
 /
@@ -99,7 +105,7 @@ Compare your saving progress with friends:
 └── styles/               # Global styles
 ```
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions to SpendShield! Please feel free to submit a Pull Request.
 
@@ -109,15 +115,15 @@ We welcome contributions to SpendShield! Please feel free to submit a Pull Reque
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Bruvato/spend-shield/blob/main/LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [HackIllinois](https://hackillinois.org/) for the opportunity to build this project
 - All contributors and team members who helped bring SpendShield to life
 
 ---
 
-Built with ❤️ for HackIllinois
+Built with ❤️ from RCM Games
